@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js" defer ></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+
+      />
+    <title>Calculadora de Equipamento</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">
+          <h2>Sizing of Wi-Fi</h2>
+
+        </div>
+
+        <form id="form" class="form">
+            <div class="form-control">
+              <label for="TLocal">Selecione o tipo do local.</label>
+                <select name="local" id="Tlocal">
+                    <option value="Selecionar"></option>
+                    <option value="Externo"> Externo</option required>  
+                    <option value="Interno"> Interno</option required>  
+                </select>
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>  
+            </div>         
+
+            <div>
+        <form id="form" class="form">
+            <div class="form-control">
+              <label for="Tambiente">Selecione o tipo de ambiente.</label>
+                <select name="ambiente" id="Tambiente">
+                    <option value="Selecionar"></option>
+                    <option value="selecionar"></option>
+                    <option value="Escritorio"> Escritorio</option>
+                    <option value="Galpão">Galpão</option>
+                    <option value="Universidade">Universidade</option>
+                    <option value="Estadios">Estadios</option>
+                    <option value="Saude">Saude</option>
+                </select>
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
+            </div> 
+
+            <form id="form" class="form">
+                <div class="form-control">
+                  <label for="Tdivisoria">Selecione o tipo de divisoria.</label>
+                    <select name="divisoria" id="Tdivisoria">
+
+                        <option value="selecionar"></option>
+                        <option value="Gesso"> Gesso</option>
+                        <option value="Tijolo">Tijolo</option>
+                        <option value="Concreto">Concreto</option>
+                        <option value="Vidro Temperado">Vidro Temperado</option>
+                        <option value="Aço">Aço</option>
+                        <option value="Compesado">Compesado</option>
+                        <option value="DryWall">DryWall</option>
+                    </select>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <i class="fas fa-check-circle"></i>
+                  <small>Mensagem de erro</small>
+                </div> 
+
+                <form id="form" class="form">
+                    <div class="form-control">
+                      <label for="Tteto">Selecione o tipo de teto.</label>
+                        <select name="teto" id="Tteto">
+                            <option value="Selecionar"></option>
+                            <option value="selecionar"></option>
+                            <option value="Gesso"> Gesso</option>
+                            <option value="Tijolo">Tijolo</option>
+                            <option value="Concreto">Concreto</option>
+                            <option value="Vidro Temperado">Vidro Temperado</option>
+                            <option value="Aço">Aço</option>
+                            <option value="Compesado">Compesado</option>
+                            <option value="DryWall">DryWall</option>
+                        </select>
+                      <i class="fas fa-exclamation-circle"></i>
+                      <i class="fas fa-check-circle"></i>
+                      <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="Qtdandar">Quantidade de andares.</label>
+                    <input type="number" id="Qtdandar"placeholder="Digite a quantidade de andar no local..." class="inputs required">
+                    
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                  </div>
+
+                <div class="form-control">
+                    <label for="text">Qual a altura do teto.</label>
+                    <input
+                      type="Qtteto"
+                      id="Qtteto"
+                      placeholder="Digite a altura média do teto..." class="inputs required"
+                    >
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                  </div>
+
+                  <form id="form" class="form-control">
+                    <div class="form-control">
+                      <label for="Critico">Existe alguma aplicação crítica que será utilizada exclusivamente pelo Wifi?</label>
+                        <select name="critico" id="critico">
+                            <option value="Selecionar"></option>
+                            <option value="Sim">Sim</option >  
+                            <option value="Não">Não</option>  
+                        </select>
+        
+                      <i class="fas fa-exclamation-circle"></i>
+                      <i class="fas fa-check-circle"></i>
+                      <small>Mensagem de erro</small>  
+                    </div> 
+
+                     <div class="form-control">
+                        <label for="Ssim">Se sim, qual?.  </label>  
+                        <input  
+                          type="text"
+                          id="Ssim"
+                          placeholder="Especifique..."
+                           
+                          />
+                          <i class="fas fa-exclamation-circle"></i>
+                          <i class="fas fa-check-circle"></i>
+                          <small>Mensagem de erro</small>
+                        </div>
+
+                        <form id="form" class="form-control">
+                            <div class="form-control">
+                              <label for="swicth">No ambiente atual existem switches PoE?</label>
+                                <select name="switch" id="Aswitch">
+                                    <option value="Selecionar"></option>
+                                    <option value="Sim">Sim</option >  
+                                    <option value="Não">Não</option>  
+                                </select>
+                
+                              <i class="fas fa-exclamation-circle"></i>
+                              <i class="fas fa-check-circle"></i>
+                              <small>Mensagem de erro</small>  
+
+                            </div> 
+                            <form id="form" class="form-control">
+                                <div class="form-control">
+                                  <label for="POE">Caso o questionamento anterior seja negativo, podemos considerar que teremos a infraestrutura elétrica para utilizarmos fontes PoE?</label>
+                                    <select name="switch" id="POE">
+                                        <option value="Selecionar"></option>
+                                        <option value="Sim">Sim</option >  
+                                        <option value="Não">Não</option>  
+                                    </select>
+                    
+                                  <i class="fas fa-exclamation-circle"></i>
+                                  <i class="fas fa-check-circle"></i>
+                                  <small>Mensagem de erro</small>  
+    
+                                </div> 
+                            </div> 
+                            <form id="form" class="form-control">
+                                <div class="form-control">
+                                  <label for="swicth">A estrutura de Wifi será complementar a uma estrutura cabeada?</label>
+                                    <select name="sestutura" id="estutura">
+                                        <option value="Selecionar"></option>
+                                        <option value="Simw">Sim, o Wifi será um complemento.</option >  
+                                        <option value="Nãow">Não, iremos utilizar somente Wifi.</option>  
+                                    </select>
+                    
+                    
+                                  <i class="fas fa-exclamation-circle"></i>
+                                  <i class="fas fa-check-circle"></i>
+                                  <small>Mensagem de erro</small>  
+    
+                                </div> 
+                            
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+
+                <div class="Tematela">
+                    <h1>Resultado da Analise</h1>
+                    <p  id="resultado"></p> 
+                </div>
+              <div class="TelaResultado">
+                  <br><br><br><br><br><br>
+            </form>
+
+
+<div>
+            <form name= "TextoTela1" id="TextoTela1" >
+                <p>Sera Necesserio realizar o estudo de Survey Preditivo?</p>
+                <br><br><br>
+                <p>Modelo de equipamento indicado.</p>
+                <br><br><br>
+                <p> Quantidade de equipamento indicado.</p>
+
+            </form>
+           
+
+</div>
+             
+            <script src="https://kit.fontawesome.com/66a579f40c.js" crossorigin="anonymous"></script>
+   
+</body>
+</html>
